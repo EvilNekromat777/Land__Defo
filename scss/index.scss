@@ -1,0 +1,307 @@
+@font-face {
+    font-family: "Europe";
+    src: url("../fonts/europebold.woff2") format("woff2"),
+    url("../fonts/europebold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    }
+
+@font-face {
+    font-family: "Europe";
+    src: url("../fonts/europenormal.woff2") format("woff2"),
+    url("../fonts/europenormal.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
+
+@import "null.scss";
+@import "header.scss";
+@import "main.scss";
+@import "block.scss";
+@import "form.scss";
+@import "banner.scss";
+@import "contacts.scss";
+@import "slider.scss";
+
+
+
+body{
+    font-family: Europe, Arial, sans-serif;
+    color: #434242;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 1443px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button{
+    width: 257px;
+    height: 62px;
+    border: 2px solid #434242;
+    font-family: Europe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: calc(12px + 6 * (100vw / 1920));
+    text-transform: uppercase;
+    color: #434242;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 22px;
+
+    &:hover{
+        box-shadow: 0 2px 10px rgba(41, 46, 60, 0.48);
+    }
+
+    &__red{
+        width: 291px;
+        background: #C92123;
+        color: #FFFFFF;
+        border: 0;
+        margin: 0 auto;
+
+        &_form{
+            width: 248px;
+            margin: 33px auto 0px;
+        }
+
+        &_banner{
+            margin: 28px 0px 0px 0px;
+            width: 415px;
+            font-size: 18px;
+            line-height: 18px;
+
+            span{
+                margin: 0px 0px 0px 5px;
+                font-weight: bold;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+.triangle{
+
+    &__text{
+        margin: 9px 0 16px 0;
+        background: url(../images/triangle__text.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 11px;
+        width: 100%;
+
+        &_left{
+            transform: scale(-1, 1);
+            left: 0;
+        }
+    }
+
+    &__img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: url(../images/triangle__img.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 27px;
+        width: 494px;
+
+        &_left{
+            transform: scale(-1, 1);
+            left: 0;
+        }
+
+        &_map{
+            width: 106%;
+            height: 55px;
+        }
+    }
+
+    &__block{
+        margin: 29px 0 0 0;
+        background: url(../images/triangle__block.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 19px;
+        width: 100%;
+    }
+}
+
+
+   @media (max-width: 1280px){
+
+        .button{
+            width: auto;
+            padding: 0 20px;
+
+            &__red{
+                width: 291px;
+
+                &_form{
+                    width: 248px;
+                    margin: 33px auto 0px;
+                }
+
+                &_banner{
+                    width: 415px;
+                }
+            }
+        }
+
+        .triangle{
+
+            &__img{
+
+                &_map{
+                    width: 100%;
+                    height: 40px;
+                }
+            }
+        }
+   }
+
+   @media (max-width: 1100px){
+
+        .triangle{
+
+            &__text{
+
+                &_map{
+                    width: 50%;
+                    margin: 25px auto 50px;
+                }
+            }
+        }
+
+        .button{
+
+            &__map{
+                width: 70%;
+                min-width: 257px;
+                margin: 0 auto;
+                position: absolute;
+                bottom: -90px;
+                left: 15%;
+            }
+        }
+   }
+
+   @media (max-width: 950px){
+
+        .button{
+            
+            &__red{
+
+                &_banner{
+                    margin: 28px auto;
+                }
+            }
+        }
+   }
+
+   @media (max-width: 767px){
+
+    .button{
+        width: 48%;
+        min-width: 161px;
+        height: 42px;
+        font-size: 14px;
+        padding: 0;
+        margin-right: 14px;
+
+        &__red{
+            width: 291px;
+            height: 62px;
+            margin: 0 auto;
+            font-size: 18px;
+
+            &_form{
+                width: 248px;
+                margin: 33px auto 0px;
+            }
+
+            &_banner{
+                width: 415px;
+                margin: 28px auto;
+            }
+        }
+
+        &:nth-child(2){
+            margin-right: 0;
+        }
+
+        &__map{
+            width: 70%;
+            height: 62px;
+            min-width: 257px;
+            margin: 0 auto;
+        }
+    }
+
+    .triangle{
+
+        &__text{
+            height: 8px;
+        }
+
+        &__img{
+
+            &_map{
+                height: 30px;
+            }
+        }
+    }
+   }
+
+   @media (max-width: 530px){
+
+        .button{
+
+            &__red{
+
+                &_banner{
+                    width: 347px;
+                    font-size: 16px;
+                    line-height: 14px;
+                    margin: 28px auto 0;
+
+                    span{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+   }
+
+   @media (max-width: 500px){
+
+        .triangle{
+
+            &__text{
+                height: 5px;
+            }
+
+            &__img{
+                height: 13px;
+            }
+
+            &__block{
+                height: 5px;
+                width: 200px;
+                margin: 28px auto 0;
+            }
+        }
+   }

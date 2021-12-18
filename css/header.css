@@ -1,0 +1,127 @@
+.header {
+  height: auto;
+  position: relative;
+}
+.header__link {
+  color: #C92123;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0px 0px 0px 20%;
+}
+.header__link:hover {
+  opacity: 0.8;
+}
+.header__body {
+  width: 50%;
+  height: 100%;
+  padding: 31px 0px 0px 0px;
+  position: relative;
+  z-index: 2;
+}
+.header__plashka-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 21% 0px 0 0px;
+  overflow: hidden;
+  height: 164px;
+}
+.header__logo-fon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 960px;
+  width: 100%;
+  height: 164px;
+}
+.header__logo {
+  position: relative;
+  z-index: 2;
+}
+.header__logo:hover {
+  opacity: 0.8;
+}
+.header__logo img {
+  max-width: 641px;
+  width: 100%;
+  height: auto;
+}
+.header__plashka-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 1% 0 0 0;
+  width: 95%;
+  height: 139px;
+}
+.header__plashka-info img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 907px;
+  width: 100%;
+  height: 139px;
+}
+.header__wrap {
+  position: relative;
+  z-index: 2;
+}
+.header__title {
+  font-weight: bold;
+  font-size: calc(24px + 24 * (100vw / 1920));
+  color: #FFFFFF;
+  margin: 0 0 2% 0;
+}
+.header__subtitle {
+  font-weight: normal;
+  font-size: calc(18px + 14 * (100vw / 1920));
+  color: #FFFFFF;
+  text-align: center;
+}
+.header__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 70%;
+}
+.header__fon {
+  display: block;
+  max-width: 1400px;
+  width: 100%;
+  height: auto;
+}
+.header__opacity {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  display: block;
+  max-width: 390px;
+  width: 100%;
+  height: auto;
+}
+.header__btns {
+  margin: 48px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 2;
+}
