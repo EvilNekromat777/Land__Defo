@@ -305,3 +305,16 @@ body{
             }
         }
    }
+
+   @media (max-width: 374px){
+
+    .button{
+
+        &__red{
+
+            &_banner{
+                width: 320px;
+            }
+        }
+    }
+   }

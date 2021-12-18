@@ -273,3 +273,13 @@
         }
     }
 }
+
+@media (max-width: 374px){
+
+    .header{
+
+        &__btns{
+            padding: 0 15px;
+        }
+    }
+}

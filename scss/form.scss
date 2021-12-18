@@ -113,3 +113,15 @@ input[type = "radio"].visually-hidden {
 		}
 	}
 }
+
+@media (max-width: 374px){
+
+	.form{
+
+		&-wrap{
+			width: 320px;
+			margin: 25px auto 0;
+		}
+	}
+
+}
