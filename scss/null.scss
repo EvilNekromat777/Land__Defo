@@ -1,9 +1,14 @@
-*,
-*:before,
-*:after  {
+* {
     padding: 0px;
     margin: 0px;
     border: 0px;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -33,16 +38,22 @@ body {
 
 body {
     line-height: 1;
-    font-size: 16px;
-    background-color: #fff;
-    // color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-family: "Lato";
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
 
+input,
+button,
+textarea {
+    font-family: "Lato";
+}
 
+input::-ms-clear {
+    display: none;
+}
 
 button {
     cursor: pointer;
@@ -56,16 +67,13 @@ button::-moz-focus-inner {
 a,
 a:visited {
     text-decoration: none;
-    color: #fff;
 }
 
 a:hover {
     text-decoration: none;
 }
 
-ul,
-ol,
-li {
+ul li {
     list-style: none;
 }
 
@@ -83,3 +91,5 @@ h6 {
     font-size: inherit;
 }
 
+//-webkit-overflow-scrolling: touch;
+//animation-play-state: paused !important;

@@ -1,258 +1,285 @@
-@import "variables.scss";
-
 .header{
+    position: relative;
+    padding: 0 0 9.8% 0;
+    overflow: hidden;
 
-	&__row{
-		display: flex;
-		justify-content: space-between;
-		position: relative;
-	}
+    &__link{
+        color: #C92123;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        margin: 0px 0px 0px 20%;
 
-	&__top{
-		height: 100px;
-		background: $header-top;
-		display: flex;
-    	align-items: center;
-	}
-
-	&__bottom{
-		height: 50px;
-		background: $header-bottom;
-		display: flex;
-    	align-items: center;
-	}
-
-	&__info{
-		display: flex;
-		justify-content: space-between;
-		align-items:center;
-		width: 100%;
-	}
-
-	&__catalog{
-		display: flex;
-		height: 40px;
-	}
-
-	&__icons{
-		display: flex;
-	}
-
-	&__icon-group{
-		display: block;
-		text-align: center;
-		margin-right: 24px;
-		position: relative;
-
-		&:last-child{
-			margin-right: 0;
-		}
-
-		&-wrap{
-			position: relative;
-		}
-
-		svg{
-			height: 26px;
-			width: 26px;
-		}
-
-		p{
-			font-size: 12px;
-			margin-top: 4px;
-		}
-
-		.qount{
-			position: absolute;
-			top: -5px;
-			right: 0;
-			font-weight: 500;
-			border-radius: 23px;
-			padding: 4px;
-		}
-
-		.summ{
-			font-weight: 500;
-			color: $text-white;
-			margin-top: 5px;
-		}
-	}
-
-	.favourites{
-
-		svg{
-
-			use{
-				stroke: #fff;
-			}
-		}
-	}
-}
-
-.search{
-
-    &-form{
-        display: flex;
+        &:hover{
+            opacity: 0.8;
+        }
     }
 
-    &-input{
-        height: 40px;
-        width: 318px;
-        padding-left: 20px;
+    &__body{
+        width: 50%;
+        height: 100%;
+        padding: 31px 0px 0px 0px;
+        position: relative;
+        z-index: 2;
     }
 
-    &-button-div{
-        width: 60px;
-        background: $button-catalog;
+    &__plashka-logo{
         display: flex;
-        align-items:center;
         justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 21% 0px 0 0px;
+        overflow: hidden;
+        height: 164px;
+    }
 
-        button{
-            background: transparent;
+    &__logo-fon{
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 960px;
+        width: 100%;
+        height: 164px;
+    }
+
+    &__logo{
+        position: relative;
+        z-index: 2;
+
+        &:hover{
+            opacity: 0.8;
         }
 
-		svg{
-			width: 20px;
-			height: 20px;
-		}
+        img{
+            max-width: 641px;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__plashka-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 1% 0 0 0;
+        width: 95%;
+        height: 139px;
+
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 907px;
+            width: 100%;
+            height: 139px;
+        }
+    }
+
+    &__wrap{
+        position: relative;
+        z-index: 2;
+    }
+
+    &__title{
+        font-weight: bold;
+        font-size: calc(24px + 24 * (100vw / 1920));
+        color: #FFFFFF;
+        margin: 0 0 2% 0;
+    }
+
+    &__subtitle{
+        font-weight: normal;
+        font-size: calc(18px + 14 * (100vw / 1920));
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    &__img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 75%;
+    }
+
+    &__fon{
+        display: block;
+        max-width: 1400px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__fon-mobile{
+        display: none;
+    }
+
+    &__opacity{
+        position: absolute;
+        top: 0;
+        right: 8.5%;
+        display: block;
+        max-width: 390px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__btns{
+        margin: 48px 0 0 7%;
+        display: flex;
+        position: relative;
+        z-index: 2;
     }
 }
 
-.phone{
 
-	svg{
-		margin-right: 5px;
-		width: 20px;
-		height: 20px;
-	}
+@media (max-width: 1600px) {
 
-	span{
-		font-weight: 500;
-		font-size: 20px;
-	}
+    .header{
+        
+        &__plashka-logo{
+            margin: 12% 0px 0 0px;
+        }
+    }
 }
 
-.menu{
-	width: 100%;
+@media (max-width: 1200px) {
 
-	ul{
-		display: flex;
-		justify-content: space-between;
+    .header{
+        
+        &__plashka-logo {
+            margin: 8% 0px 0 0px;
+            height: auto;
+            padding: 4% 0;
+        }
 
-		li{
-			display: flex;
-    		align-items: center;
-			padding: 0 16px;
-			transition: all .5s ease 0s;
-		}
+        &__logo{
 
-		.active{
-			background: $button-active;
-			height: 50px;
-			padding: 0 16px;
-		}
-	}
+            img{
+                max-width: 300px;
+            }
+        }
+
+        &__logo-fon{
+            height: auto;
+        }
+
+        &__plashka-info{
+            height: auto;
+            padding: 4% 0;
+        }
+
+        &__plashka-info img{
+            height: 110px;
+        }
+
+        &__btns{
+            margin-top: 25px;
+        }
+    }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 900px){
 
-	.search-input-div{
-		display: none;
-	}
+    .header{
 
-	.header__bottom{
-		display: none;
-	}
-}
+        &__logo img {
+            max-width: 200px;
+        }
 
-@media (max-width: 860px){
+        &__title{
+            font-size: calc(14px + 24 * (100vw / 1920));
+        }
 
-	.phone{
+        &__subtitle{
+            font-size: calc(12px + 14 * (100vw / 1920));
+        }
 
-		span{
-			font-size: 14px;
-		}
+        &__plashka-info img {
+            height: 90px;
+        }
 
-		svg{
-			margin-right: 2px;
-			width: 15px;
-			height: 15px;
-		}
-	}
-
-	.header__icon-group{
-
-		.summ{
-			font-size: 12px;
-		}
-
-		p{
-			font-size: 10px;
-		}
-	}
+        &__btns{
+            margin-left: 20px;
+        }
+    }
 }
 
 @media (max-width: 767px){
 
-	.header{
+    .header{
+        padding: 0 0 49px 0;
 
-		&__top{
-			height: 90px;
-		}
+        &__link{
+            display: none;
+        }
 
-		&__row{
-			display: block;
-		}
+        &__img{
+            position: relative;
+            min-width: 100%;
+        }
 
-		&__icons{
-			margin-right: 10px;
-		}
+        &__body{
+            width: 100%;
+            padding: 0;
+        }
 
-		&__icon-group{
-			margin-right: 14px;
+        &__opacity{
+            display: none;
+        }
 
-			p{
-				display: none;
-			}
+        &__plashka-logo{
+            margin: 0;
+            height: 94px;
+            padding: 0;
+            background: #C92123;
+        }
 
-			svg{
-				width: 20px;
-				height: 20px;
-			}
+        &__logo-fon{
+            display: none;
+        }
 
-			.summ{
-				display: none;
-			}
+        &__logo img{
+            min-width: 244px;
+        }
 
-			.qount{
-				font-size: 8px;
-				right: -12px;
-    			top: -8px;
-			}
-		}
+        &__plashka-info{
+            margin: 9px 0 8px 0;
+            padding: 0;
+            height: 69px;
+            width: 100%;
+            background: #047D8F;
 
-		.logo{
-			margin-bottom: 5px;
-			height: 35px;
-		}
-	
-		.phone{
-			position: absolute;
-			top: 8px;
-			right: 0;
-	
-			span{
-				font-size: 16px;
-			}
-		}
-	
-		.search-button-div{
-			background: transparent;
-		}
-	}
+            img{
+                display: none;
+            }
+        }
 
-	
+        &__fon{
+            display: none;
+        }
+
+        &__fon-mobile{
+            display: block;
+            max-width: 767px;
+            width: 100%;
+            height: auto;
+        }
+
+        &__btns{
+            margin: 18px 0 0 0;
+            padding: 0 21px;
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
 }
 
+@media (max-width: 374px){
 
+    .header{
+
+        &__btns{
+            padding: 0 15px;
+        }
+    }
+}

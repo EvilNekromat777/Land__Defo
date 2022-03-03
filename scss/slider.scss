@@ -1,0 +1,111 @@
+.swiper-block{
+    margin: 64px auto 81px;
+    width: 81%;
+    padding: 10px;
+    overflow: hidden;
+
+    @media (max-width: 480px){
+        overflow:auto;
+        width: 100%;
+    }
+}
+
+.swiper-container {
+    width: 271px; 
+  }
+  
+  .swiper-slide {
+    display: flex;
+    margin-right: 20px;
+  }
+  
+  
+
+.item{
+    position: relative;
+    color: #434242;
+
+    &:hover{
+        box-shadow: 0 2px 10px rgba(41, 46, 60, 0.48);
+    }
+
+    &__description{
+        position: absolute;
+        top: 270px;
+        left: 0;
+        padding: 0px 0px 0px 15px;
+        text-transform: uppercase;
+    }
+
+    &__price-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #E5E5E5;
+        border-top: 0;
+        padding: 15px 15px 9px;
+
+        span{
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__sale-wrap{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 0px 8px 0px;
+    }
+
+    &__old-price{
+        font-size: 14px;
+        color: #C4C4C4;
+        margin: 0px 13px 0px 0px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -1px;
+            display: block;
+            width: 47px;
+            height: 1px;
+            z-index: 2;
+            background-color: #C4C4C4;
+            transform: rotate(-15deg);
+        }
+    }
+
+    &__percent{
+        background: #C92123;
+        width: 46px;
+        height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        font-size: 14px;
+        padding-top: 3px;
+    }
+
+    &__price{
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 7px;
+    }
+
+    &__nds{
+        font-size: 14px;
+        text-align: right;
+    }
+}
+
+
+@media (max-width: 500px){
+
+    .swiper-block{
+        margin: 35px auto 30px;
+    }
+}
+
