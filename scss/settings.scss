@@ -1,0 +1,46 @@
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1240px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.logo{
+    margin-right: 34px;
+    width: 113px;
+    height: 57px;
+}
+
+.qount{
+    font-size: 10px;
+    color: $text-white;
+    background: $plashka-green;
+}
+
+.basket{
+    display: flex !important;
+}
+
+.block-title{
+    font-weight: 500;
+    font-size: 24px;
+    color: $text-bold;
+}
+
+.block__text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: $text-grey;
+}
+
+main{
+    color: $text-bold;
+}
+
